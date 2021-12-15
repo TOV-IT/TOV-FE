@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Meta, Story } from "@storybook/react";
 
 import LogoComponent from "./logo_component";
 
@@ -15,9 +16,9 @@ export default {
       ],
     },
   },
-};
+} as Meta;
 
-const MultiTemplate = (args) => {
+const MultiTemplate: Story<any> = (args) => {
   return (
     <>
       <LogoComponent {...args} src="default" />
@@ -27,7 +28,7 @@ const MultiTemplate = (args) => {
   );
 };
 
-const Template = (args) => <LogoComponent {...args} />;
+const Template: Story<any> = (args) => <LogoComponent {...args} />;
 
 export const Multi = MultiTemplate.bind({});
 Multi.parameters = {
