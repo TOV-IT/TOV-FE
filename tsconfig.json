@@ -1,27 +1,46 @@
 {
-    "compilerOptions": {
-        "target": "es6",
-        "module": "esnext",
-        "moduleResolution": "node",
-        "noResolve": false,
-        "noImplicitAny": false,
-        "removeComments": false,
-        "sourceMap": true,
-        "allowJs": true,
-        "jsx": "react",
-        "allowSyntheticDefaultImports": true,
-        "keyofStringsOnly": true
-    },
-    "typeRoots": ["node_modules/@types", "src/@type"],
-    "exclude": [
-        "node_modules",
-        "build",
-        "scripts",
-        "acceptance-tests",
-        "webpack",
-        "jest",
-        "src/setupTests.ts",
-        "./node_modules/**/*"
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": [
+      "es2015", 
+      "es2016", 
+      "es2017", 
+      "es2018", 
+      "es2019", 
+      "ESNext",
+      "dom",
+      "dom.iterable",
+      "esnext"
     ],
-    "include": ["./src/**/*", "@type"]
+    "paths": {
+      "@Actions": ["./src/redux/actions/index"],
+      "@Vars": ["./src/assets/css/vars.scss"],
+      "@Pages": ["/src/components/pages"],
+      "@Atoms": ["/src/components/UI/atoms"],
+      "@Molecules": ["/src/components/UI/molecules"],
+      "@Organisms": ["/src/components/UI/organisms"],
+      "@Hoc": ["/src/components/HOC"],
+      "@Utils": ["/src/utils"]
+    },
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "emitDeclarationOnly": true,
+    "declaration": true
+  },
+  "include": [
+    "src",
+    "src/**/*"
+  ]
 }

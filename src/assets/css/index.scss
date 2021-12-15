@@ -1,25 +1,6 @@
 @import './vars';
 
 @font-face {
-    font-family: 'GmarketSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-style: 500;
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'GmarketSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-    font-style: bold;
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'GmarketSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
-    font-style: lighter;
-    font-weight: lighter;
-}
-
-@font-face {
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
@@ -27,7 +8,7 @@
 }
 
 *{
-    font-family: 'GmarketSans';
+    font-family: 'Roboto';
     box-sizing: border-box;
 }
 
@@ -51,16 +32,21 @@ time, mark, audio, video {
 	// font: inherit;
 	vertical-align: baseline;
     text-decoration: none;
-    font-family: 'GmarketSans';
+    font-family: 'Roboto';
     list-style: none;
 }
+
+html{
+    font-size: 10px;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	// line-height: 1;
     margin: 0 !important;
     padding: 0 !important;
 }
