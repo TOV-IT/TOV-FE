@@ -12,11 +12,9 @@ const MainRouter: React.FC<any> = () => {
   return (
     <main className="main">
       <Routes>
-        
-        <Route path="/*" element={<Home/>} />
-
+        <Route path="/*" element={<Home />} />
       </Routes>
-    </main>             
-  )
-}
+    </main>
+  );
+};
 export default hot(module)(MainRouter);
