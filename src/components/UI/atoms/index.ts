@@ -1,6 +1,8 @@
 import Logo from "./logo";
 
-export { Logo };
+export { 
+  Logo, 
+};
 
 const Atoms = {
   Logo,

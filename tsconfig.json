@@ -14,14 +14,16 @@
       "esnext"
     ],
     "paths": {
-      "@Actions": ["./src/redux/actions/index.ts"],
-      "@Vars": ["./src/assets/css/vars.scss"],
-      "@Pages": ["./src/components/pages"],
-      "@Atoms": ["./src/components/UI/atoms/index.ts"],
-      "@Molecules": ["./src/components/UI/molecules/index.tsx"],
-      "@Organisms": ["./src/components/UI/organisms/index.tsx"],
-      "@Hoc": ["./src/components/HOC/index.ts"],
-      "@Utils": ["./src/utils/index.ts"]
+      "Actions": ["./src/redux/actions/index.ts"],
+      "Vars": ["./src/assets/vars.scss"],
+      "Bases": ["./src/components/base/index.ts"],
+      "Pages": ["./src/components/pages"],
+      "Atoms": ["./src/components/UI/atoms/index.ts"],
+      "Molecules": ["./src/components/UI/molecules/index.ts"],
+      "Organisms": ["./src/components/UI/organisms/index.ts"],
+      "Hoc": ["./src/components/HOC/index.ts"],
+      "Utils": ["./src/utils/index.ts"],
+      "StyleVars": ["./src/assets/GlobalStyles.tsx"]
     },
     "noImplicitAny": false,
     "noResolve": false,

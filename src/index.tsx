@@ -14,10 +14,13 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 
+import styled, { createGlobalStyle, ThemeProvider, css } from "styled-components";
+import GlobalStyle from "./assets/GlobalStyles";
+
 // Components
 import App from "./components/App/App";
 
-import "./assets/css/index.scss";
+import "./assets/index.scss";
 
 axios.defaults.baseURL = "https://localhost:8000/api/";
 axios.defaults.withCredentials = true;
@@ -34,9 +37,11 @@ ReactDOM.render(
   <CookiesProvider>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
+        <ThemeProvider theme={GlobalStyle}>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </ThemeProvider>
       </PersistGate>
     </Provider>
   </CookiesProvider>,

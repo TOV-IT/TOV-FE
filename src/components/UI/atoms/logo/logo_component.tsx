@@ -6,13 +6,13 @@ import { Helmet } from "react-helmet";
 import { Link, Route, BrowserRouter, Router } from "react-router-dom";
 import axios from "axios";
 import { useSelector, useDispatch, RootStateOrAny } from "react-redux";
-import Actions from "@Actions";
+import Actions from "Actions";
 
 import TOV_LOGO from "./assets/TOV.png";
 import TOV_LOGO_B from "./assets/TOV_B.png";
 import TOV_LOGO_W from "./assets/TOV_W.png";
 
-const StyledLogo = styled.img.attrs((props)=>({
+const StyledLogo = styled.img.attrs((props) => ({
   src: props.src || TOV_LOGO,
 }))`
   display: block;
