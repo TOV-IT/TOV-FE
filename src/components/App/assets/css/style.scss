@@ -1,0 +1,11 @@
+@import "Vars";
+
+.container {
+    padding-top: $header-desktop-line-height;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        padding-top: $header-mobile-line-height;
+    }
+}

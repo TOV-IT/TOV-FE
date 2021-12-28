@@ -4,7 +4,7 @@ import { Meta, Story } from "@storybook/react";
 import LogoComponent from "./logo_component";
 
 export default {
-  title: "Logo",
+  title: "Atoms/Logo",
   component: LogoComponent,
   parameters: {
     backgrounds: {

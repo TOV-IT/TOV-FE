@@ -8,4 +8,4 @@ const Header: React.FC<any> = ({...props}) => {
     )
 };
 
-export default hot(module)(Header);
+export default Header;

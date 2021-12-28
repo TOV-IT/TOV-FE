@@ -6,7 +6,8 @@ $color-d2-blue: rgb(106, 158, 255, 100%);
 $color-d1-blue: rgb(180, 206, 255, 100%);
 
 // 회색조 팔레트
-$line-black: rgba(0, 0, 0, 0.2);
+$line-black: rgba(0, 0, 0, 20%);
+$color-d4-black: rgb(35, 35, 35, 100%);
 $base-black: rgb(41, 47, 54, 100%);
 $color-d4-gray: rgb(129, 129, 129, 100%);
 $color-d3-gray: rgb(208, 208, 208, 100%);
@@ -26,5 +27,5 @@ $color-success: rgb(46, 204, 113, 100%);
 $color-warning: rgb(241, 196, 15, 100%);
 
 
-$header-desktop-line-height: 70px;
+$header-desktop-line-height: 60px;
 $header-mobile-line-height: 50px;

@@ -31,7 +31,7 @@ const GlobalStyle = {
     },
     size: {
         // Header 높이
-        $header_desktop_line_height: '65px',
+        $header_desktop_line_height: '60px',
         $header_mobile_line_height: '50px',
     }
 }

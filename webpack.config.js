@@ -1,3 +1,4 @@
+const path = require("path");
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -5,7 +6,6 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const { ESBuildMinifyPlugin } = require("esbuild-loader");
 
 const port = 3000;
-// const port = 8000;
 
 module.exports = {
     mode: 'development',
@@ -16,7 +16,7 @@ module.exports = {
     output: {
         path: __dirname + '/build',
         filename: 'app.js',
-        publicPath: ''
+        publicPath: '',
     },
     resolve: {
         alias: {
@@ -25,10 +25,11 @@ module.exports = {
             "Bases": __dirname + '/src/components/base/index.ts',
             'Actions': __dirname + '/src/redux/actions/index.ts',
             'Vars': __dirname + '/src/assets/vars.scss',
-            'Pages/*': __dirname + '/src/components/pages/*',
+            'Templates': __dirname + '/src/components/templates/index.ts',
+            'Pages': __dirname + '/src/components/pages/',
             'Atoms': __dirname + '/src/components/UI/atoms/index.ts',
-            'Molecules': __dirname + '/src/components/UI/molecules/index.tsx',
-            'Organisms': __dirname + '/src/components/UI/organisms/index.tsx',
+            'Molecules': __dirname + '/src/components/UI/molecules/index.ts',
+            'Organisms': __dirname + '/src/components/UI/organisms/index.ts',
             'Hoc': __dirname + '/src/components/HOC/index.ts',
             'Utils': __dirname + '/src/utils/index.ts',
             'StyleVars': __dirname + "/../src/assets/GlobalStyles.tsx",
@@ -50,11 +51,11 @@ module.exports = {
                 ],
                 exclude: /node_modules/,
             },
-            {
-                enforce: "pre",
-                test: /\.js$/,
-                loader: "source-map-loader"
-            },
+            // {
+            //     enforce: "pre",
+            //     test: /\.(ts|tsx|js|jsx)$/,
+            //     loader: "source-map-loader"
+            // },
             { // CSS LOADER
                 test: /\.(css|scss)$/,
                 use: [

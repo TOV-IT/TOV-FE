@@ -1,6 +1,22 @@
 @import 'Vars';
 
-h1{
-    font-size: 5rem;
-    color: $color-d5-red;
+.scroll_page{
+
+    display: block;
+    font-size: 20px;
+    overflow: hidden;
+
+    &.sc-1{
+        height: 100vh;
+        background-color: $color-d4-black;
+        padding: 0 5%;
+
+        .title{
+            margin-top: 20%;
+            text-align: center;
+            color: #fff;
+            font-size: 4em;
+        }
+    }
+
 }

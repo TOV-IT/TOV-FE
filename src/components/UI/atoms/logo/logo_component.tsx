@@ -41,8 +41,8 @@ const LogoComponent: React.FC<any> = ({ width, height, src }) => {
         setLogoSrc(TOV_LOGO);
         break;
     }
-    return () => {};
-  }, [logoSrc]);
+    return () => {0};
+  }, [src]);
 
   return (
     <>

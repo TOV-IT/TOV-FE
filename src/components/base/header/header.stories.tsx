@@ -6,7 +6,7 @@ import HeaderComponent from "./header_component";
 import GlobalStyle from "StyleVars";
 
 export default {
-  title: "Header",
+  title: "Base/Header",
   component: HeaderComponent,
   parameters: {
     backgrounds: {
@@ -25,4 +25,7 @@ const Template: Story<any> = (args) => {
 } 
 
 export const Default = Template.bind({});
+Default.parameters = {
+  backgrounds: { default: "Black" },
+};
 Default.args = {};

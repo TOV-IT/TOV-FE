@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "target": "es5",
+    "baseUrl": "",  
+    "target": "esnext",
     "lib": [
       "es2015", 
       "es2016", 
@@ -17,6 +17,7 @@
       "Actions": ["./src/redux/actions/index.ts"],
       "Vars": ["./src/assets/vars.scss"],
       "Bases": ["./src/components/base/index.ts"],
+      "Templates": ["./src/components/templates/index.ts"],
       "Pages": ["./src/components/pages"],
       "Atoms": ["./src/components/UI/atoms/index.ts"],
       "Molecules": ["./src/components/UI/molecules/index.ts"],
@@ -35,12 +36,12 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": true,
     "module": "CommonJS",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": false,
     "jsx": "react-jsx",
     "emitDeclarationOnly": true,

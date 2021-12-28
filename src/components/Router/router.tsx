@@ -8,13 +8,16 @@ import Home from "../pages/home/home";
 
 import "./assets/css/style.scss";
 
+import Templates, {Frame} from "Templates";
+
 const MainRouter: React.FC<any> = () => {
   return (
-    <main className="main">
+    <>
       <Routes>
-        <Route path="/*" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/test" element={<Templates.Frame />} />
       </Routes>
-    </main>
+    </>
   );
 };
-export default hot(module)(MainRouter);
+export default MainRouter;

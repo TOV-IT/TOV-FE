@@ -1,22 +1,24 @@
-import Constants from "../constants";
+import Actions from 'Actions';
 
 const initState = {
-    value: 0,
+	value: 0,
 };
 
 const test = (state = initState, action) => {
-    switch (action.type) {
-        case Constants.test.INCREMENT:
-            return {
-                ...state, value: action.payload
-            };
-        case Constants.test.DECREMENT:
-            return {
-                ...state, value: action.payload
-            };
-        default:
-            return state;
-    }
+	switch (action.type) {
+		case Actions.test.constants.INCREMENT:
+			return {
+				...state,
+				value: action.payload,
+			};
+		case Actions.test.constants.DECREMENT:
+			return {
+				...state,
+				value: action.payload,
+			};
+		default:
+			return state;
+	}
 };
 
 export default test;

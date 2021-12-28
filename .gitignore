@@ -4,3 +4,4 @@
 .pnp.loader.mjs
 yarn.lock
 /storybook-static
+/build

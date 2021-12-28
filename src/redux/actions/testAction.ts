@@ -1,22 +1,26 @@
-import Constants from "../constants";
-
-const increment = (count:number) => {
-    return {
-        type: Constants.test.INCREMENT,
-        payload: count + 1,
-    };
+const constants: any = {
+  INCREMENT: "INCREMENT",
+  DECREMENT: "DECREMENT",
 };
 
-const decrement = (count:number) => {
-    return {
-        type: Constants.test.DECREMENT,
-        payload: count - 1,
-    };
+const increment = (count: number) => {
+  return {
+    type: constants.INCREMENT,
+    payload: count + 1,
+  };
+};
+
+const decrement = (count: number) => {
+  return {
+    type: constants.DECREMENT,
+    payload: count - 1,
+  };
 };
 
 const testAction = {
-    increment,
-    decrement,
+  constants,
+  increment,
+  decrement,
 };
 
 export default testAction;
